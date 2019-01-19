@@ -1,7 +1,12 @@
 import json
 import random
+import sys
 
-data = json.loads(open("bandName.json").read())
+
+
+
+filename = sys.argv[1]
+data = json.loads(open(filename).read())
 
 bandName = data['bands']
 print(bandName)
